@@ -1,0 +1,748 @@
+<!doctype html> 
+<html> 
+<head> 
+  <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>上醫堂耳針取穴輔助程式</title> 
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> 
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css"> 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+  <script> 
+  $( function() { 
+    $( "#tabs" ).tabs(); 
+  } ); 
+  </script> 
+</head> 
+<body> 
+
+         <img src="Auricular_title.gif" height="218" width="800"> 
+<!---          <table border="0" cellpadding="1" cellspacing="1" style="width: 600px"> 
+         <tr><td><h3>目前查詢主症: 咳嗽</h2></td> 
+         <td><button align="left" onclick="location.href='tcmTool.html'" type="button"><h2>回首頁</h2></button></td></tr> 
+         </table> 
+--->
+         
+         <!--<p>數位人生哲學起課程式</p>--> 
+  
+<div id="tabs"> 
+  <ul> 
+    <li><a href="#tabs-1">總論		    </a></li> 
+    <li><a href="#tabs-2">消化系統疾病	    </a></li> 
+    <li><a href="#tabs-3">呼吸系統疾病	    </a></li> 
+    <li><a href="#tabs-4">循環系統疾病	    </a></li> 
+    <li><a href="#tabs-5">神經、精神系統疾病  </a></li> 
+    <li><a href="#tabs-6">內分泌和代謝系統疾病</a></li> 
+    <li><a href="#tabs-7">泌尿系統疾病	    </a></li> 
+    <li><a href="#tabs-8">外科疾病	    </a></li> 
+    <li><a href="#tabs-9">五官科疾病	    </a></li> 
+    <li><a href="#tabs-10">婦科疾病	    </a></li> 
+    <li><a href="#tabs-11">皮膚科</a></li> 
+    <li><a href="#tabs-12">耳穴防病、美容、保健</a></li> 
+  </ul> 
+
+
+
+<div id="tabs-1"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#004"><p style="color:#ff5555;"><h2>十止</h2></p></a></td></tr>
+<tr><td><a href="#005"><p style="color:black;"><h3>止痛</h3></p></a></td></tr>
+<tr><td><a href="#010"><p style="color:black;"><h3>止暈</h3></p></a></td></tr>
+<tr><td><a href="#012"><p style="color:black;"><h3>止驚</h3></p></a></td></tr>
+<tr><td><a href="#013"><p style="color:black;"><h3>止咳</h3></p></a></td></tr>
+<tr><td><a href="#014"><p style="color:black;"><h3>止喘</h3></p></a></td></tr>
+<tr><td><a href="#015"><p style="color:black;"><h3>止癢</h3></p></a></td></tr>
+<tr><td><a href="#016"><p style="color:black;"><h3>止鳴</h3></p></a></td></tr>
+<tr><td><a href="#017"><p style="color:black;"><h3>止酸</h3></p></a></td></tr>
+<tr><td><a href="#018"><p style="color:black;"><h3>止吐</h3></p></a></td></tr>
+<tr><td><a href="#019"><p style="color:black;"><h3>止帶</h3></p></a></td></tr>
+<tr><td><a href="#020"><p style="color:#ff5555;"><h2>六對</h2></p></a></td></tr>
+<tr><td><a href="#021"><p style="color:black;"><h3>鎮靜、興奮</h3></p></a></td></tr>
+<tr><td><a href="#023"><p style="color:black;"><h3>降壓、升壓</h3></p></a></td></tr>
+<tr><td><a href="#025"><p style="color:black;"><h3>降率、強心</h3></p></a></td></tr>
+<tr><td><a href="#027"><p style="color:black;"><h3>止血、活血</h3></p></a></td></tr>
+<tr><td><a href="#030"><p style="color:black;"><h3>利尿、止遺</h3></p></a></td></tr>
+<tr><td><a href="#032"><p style="color:black;"><h3>通便、止瀉</h3></p></a></td></tr>
+<tr><td><a href="#034"><p style="color:#ff5555;"><h2>利五官</h2></p></a></td></tr>
+<tr><td><a href="#035"><p style="color:black;"><h3>利咽</h3></p></a></td></tr>
+<tr><td><a href="#036"><p style="color:black;"><h3>明目</h3></p></a></td></tr>
+<tr><td><a href="#037"><p style="color:black;"><h3>助聽</h3></p></a></td></tr>
+<tr><td><a href="#038"><p style="color:black;"><h3>鼻通</h3></p></a></td></tr>
+<tr><td><a href="#039"><p style="color:black;"><h3>美容</h3></p></a></td></tr>
+<tr><td><a href="#040"><p style="color:#ff5555;"><h2>三抗一提</h2></p></a></td></tr>
+<tr><td><a href="#041"><p style="color:black;"><h3>抗過敏</h3></p></a></td></tr>
+<tr><td><a href="#043"><p style="color:black;"><h3>抗感染</h3></p></a></td></tr>
+<tr><td><a href="#045"><p style="color:black;"><h3>抗風濕</h3></p></a></td></tr>
+<tr><td><a href="#046"><p style="color:black;"><h3>提高免疫力</h3></p></a></td></tr>
+<tr><td><a href="#047"><p style="color:#ff5555;"><h2>退燒</h2></p></a></td></tr>
+<tr><td><a href="#049"><p style="color:#ff5555;"><h2>三調整</h2></p></a></td></tr>
+<tr><td><a href="#050"><p style="color:black;"><h3>調整植物神經功能</h3></p></a></td></tr>
+<tr><td><a href="#051"><p style="color:black;"><h3>調整內分泌功能</h3></p></a></td></tr>
+<tr><td><a href="#052"><p style="color:black;"><h3>調整月經週期、經量</h3></p></a></td></tr>
+<tr><td><a href="#053"><p style="color:#ff5555;"><h2>兩補</h2></p></a></td></tr>
+<tr><td><a href="#054"><p style="color:black;"><h3>補腎</h3></p></a></td></tr>
+<tr><td><a href="#055"><p style="color:black;"><h3>補血</h3></p></a></td></tr>
+<tr><td><a href="#056"><p style="color:#ff5555;"><h2>三健</h2></p></a></td></tr>
+<tr><td><a href="#057"><p style="color:black;"><h3>健腦</h3></p></a></td></tr>
+<tr><td><a href="#058"><p style="color:black;"><h3>健肝血</h3></p></a></td></tr>
+<tr><td><a href="#059"><p style="color:black;"><h3>健脾助運</h3></p></a></td></tr>
+<tr><td><a href="#060"><p style="color:#ff5555;"><h2>其他功能</h2></p></a></td></tr>
+<tr><td><a href="#061"><p style="color:black;"><h3>催乳</h3></p></a></td></tr>
+<tr><td><a href="#062"><p style="color:black;"><h3>理氣消脹</h3></p></a></td></tr>
+<tr><td><a href="#063"><p style="color:black;"><h3>降糖</h3></p></a></td></tr>
+<tr><td><a href="#064"><p style="color:black;"><h3>解痙、排石</h3></p></a></td></tr>
+<tr><td><a href="#065"><p style="color:black;"><h3>利膽</h3></p></a></td></tr>
+<tr><td><a href="#066"><p style="color:black;"><h3>安眠</h3></p></a></td></tr>
+<tr><td><a href="#067"><p style="color:black;"><h3>收斂汗液（止汗）</h3></p></a></td></tr>
+</table>
+<a name="005"></a>
+<img src="005.jpg">
+<a name="010"></a>
+<img src="010.jpg">
+<a name="012"></a>
+<img src="012.jpg">
+<a name="013"></a>
+<img src="013.jpg">
+<a name="014"></a>
+<img src="014.jpg">
+<a name="015"></a>
+<img src="015.jpg">
+<a name="016"></a>
+<img src="016.jpg">
+<a name="017"></a>
+<img src="017.jpg">
+<a name="018"></a>
+<img src="018.jpg">
+<a name="019"></a>
+<img src="019.jpg">
+<a name="021"></a>
+<img src="021.jpg">
+<a name="023"></a>
+<img src="023.jpg">
+<a name="025"></a>
+<img src="025.jpg">
+<a name="027"></a>
+<img src="027.jpg">
+<a name="030"></a>
+<img src="030.jpg">
+<a name="032"></a>
+<img src="032.jpg">
+<a name="035"></a>
+<img src="035.jpg">
+<a name="036"></a>
+<img src="036.jpg">
+<a name="037"></a>
+<img src="037.jpg">
+<a name="038"></a>
+<img src="038.jpg">
+<a name="039"></a>
+<img src="039.jpg">
+<a name="041"></a>
+<img src="041.jpg">
+<a name="043"></a>
+<img src="043.jpg">
+<a name="045"></a>
+<img src="045.jpg">
+<a name="046"></a>
+<img src="046.jpg">
+<a name="050"></a>
+<img src="050.jpg">
+<a name="051"></a>
+<img src="051.jpg">
+<a name="052"></a>
+<img src="052.jpg">
+<a name="054"></a>
+<img src="054.jpg">
+<a name="055"></a>
+<img src="055.jpg">
+<a name="057"></a>
+<img src="057.jpg">
+<a name="058"></a>
+<img src="058.jpg">
+<a name="059"></a>
+<img src="059.jpg">
+<a name="061"></a>
+<img src="061.jpg">
+<a name="062"></a>
+<img src="062.jpg">
+<a name="063"></a>
+<img src="063.jpg">
+<a name="064"></a>
+<img src="064.jpg">
+<a name="065"></a>
+<img src="065.jpg">
+<a name="066"></a>
+<img src="066.jpg">
+<a name="067"></a>
+<img src="067.jpg">
+</div>
+<div id="tabs-2"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#071"><p style="color:black;"><h3>胃炎</h3></p></a></td></tr>
+<tr><td><a href="#073"><p style="color:black;"><h3>胃、十二指腸瀵瘍</h3></p></a></td></tr>
+<tr><td><a href="#076"><p style="color:black;"><h3>急性胃腸炎</h3></p></a></td></tr>
+<tr><td><a href="#078"><p style="color:black;"><h3>悽性胰腺炎</h3></p></a></td></tr>
+<tr><td><a href="#079"><p style="color:black;"><h3>呃逆</h3></p></a></td></tr>
+<tr><td><a href="#080"><p style="color:black;"><h3>食道炎</h3></p></a></td></tr>
+<tr><td><a href="#081"><p style="color:black;"><h3>膽II炎、膽道感染</h3></p></a></td></tr>
+<tr><td><a href="#083"><p style="color:black;"><h3>肝炎、肝炎後綜合症</h3></p></a></td></tr>
+<tr><td><a href="#084"><p style="color:black;"><h3>腸功能紊亂</h3></p></a></td></tr>
+<tr><td><a href="#085"><p style="color:black;"><h3>便秘</h3></p></a></td></tr>
+<tr><td><a href="#086"><p style="color:black;"><h3>腹瀉</h3></p></a></td></tr>
+<tr><td><a href="#088"><p style="color:black;"><h3>潰瘍性結腸炎</h3></p></a></td></tr>
+<tr><td><a href="#089"><p style="color:black;"><h3>克隆氏病</h3></p></a></td></tr>
+</table>
+<a name="071"></a>
+<img src="071.jpg">
+<a name="073"></a>
+<img src="073.jpg">
+<a name="076"></a>
+<img src="076.jpg">
+<a name="078"></a>
+<img src="078.jpg">
+<a name="079"></a>
+<img src="079.jpg">
+<a name="080"></a>
+<img src="080.jpg">
+<a name="081"></a>
+<img src="081.jpg">
+<a name="083"></a>
+<img src="083.jpg">
+<a name="084"></a>
+<img src="084.jpg">
+<a name="085"></a>
+<img src="085.jpg">
+<a name="086"></a>
+<img src="086.jpg">
+<a name="088"></a>
+<img src="088.jpg">
+<a name="089"></a>
+<img src="089.jpg">
+</div>
+<div id="tabs-3"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#091"><p style="color:black;"><h3>氣管炎</h3></p></a></td></tr>
+<tr><td><a href="#092"><p style="color:black;"><h3>支氣管哮喘</h3></p></a></td></tr>
+<tr><td><a href="#093"><p style="color:black;"><h3>胸痛、胸悶、氣短</h3></p></a></td></tr>
+<tr><td><a href="#094"><p style="color:black;"><h3>支氣管擴張</h3></p></a></td></tr>
+<tr><td><a href="#095"><p style="color:black;"><h3>肺氣腫</h3></p></a></td></tr>
+<tr><td><a href="#096"><p style="color:black;"><h3>感冒</h3></p></a></td></tr>
+</table>
+<a name="091"></a>
+<img src="091.jpg">
+<a name="092"></a>
+<img src="092.jpg">
+<a name="093"></a>
+<img src="093.jpg">
+<a name="094"></a>
+<img src="094.jpg">
+<a name="095"></a>
+<img src="095.jpg">
+<a name="096"></a>
+<img src="096.jpg">
+</div>
+<div id="tabs-4"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#099"><p style="color:black;"><h3>高血壓</h3></p></a></td></tr>
+<tr><td><a href="#100"><p style="color:black;"><h3>低血壓</h3></p></a></td></tr>
+<tr><td><a href="#101"><p style="color:black;"><h3>冠心病</h3></p></a></td></tr>
+<tr><td><a href="#102"><p style="color:black;"><h3>心律不齊</h3></p></a></td></tr>
+<tr><td><a href="#103"><p style="color:black;"><h3>心動過速、心房纖顫</h3></p></a></td></tr>
+<tr><td><a href="#104"><p style="color:black;"><h3>心動過緩</h3></p></a></td></tr>
+<tr><td><a href="#105"><p style="color:black;"><h3>無脈症</h3></p></a></td></tr>
+<tr><td><a href="#106"><p style="color:black;"><h3>心神經官能症</h3></p></a></td></tr>
+</table>
+<a name="099"></a>
+<img src="099.jpg">
+<a name="100"></a>
+<img src="100.jpg">
+<a name="101"></a>
+<img src="101.jpg">
+<a name="102"></a>
+<img src="102.jpg">
+<a name="103"></a>
+<img src="103.jpg">
+<a name="104"></a>
+<img src="104.jpg">
+<a name="105"></a>
+<img src="105.jpg">
+<a name="106"></a>
+<img src="106.jpg">
+</div>
+<div id="tabs-5"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#108"><p style="color:black;"><h3>神經衰弱</h3></p></a></td></tr>
+<tr><td><a href="#110"><p style="color:black;"><h3>瘛症</h3></p></a></td></tr>
+<tr><td><a href="#112"><p style="color:black;"><h3>前頭痛</h3></p></a></td></tr>
+<tr><td><a href="#113"><p style="color:black;"><h3>偏頭痛</h3></p></a></td></tr>
+<tr><td><a href="#114"><p style="color:black;"><h3>後頭痛</h3></p></a></td></tr>
+<tr><td><a href="#115"><p style="color:black;"><h3>頭頂痛</h3></p></a></td></tr>
+<tr><td><a href="#118"><p style="color:black;"><h3>腦震盪後遺症</h3></p></a></td></tr>
+<tr><td><a href="#120"><p style="color:black;"><h3>精神分裂症</h3></p></a></td></tr>
+<tr><td><a href="#121"><p style="color:black;"><h3>植物神經功能紊亂</h3></p></a></td></tr>
+<tr><td><a href="#122"><p style="color:black;"><h3>多夢</h3></p></a></td></tr>
+<tr><td><a href="#124"><p style="color:black;"><h3>癲癇</h3></p></a></td></tr>
+<tr><td><a href="#125"><p style="color:black;"><h3>面肌痙攣</h3></p></a></td></tr>
+<tr><td><a href="#126"><p style="color:black;"><h3>面神經麻揮</h3></p></a></td></tr>
+<tr><td><a href="#127"><p style="color:black;"><h3>幻肢痛</h3></p></a></td></tr>
+<tr><td><a href="#128"><p style="color:black;"><h3>三叉神經痛</h3></p></a></td></tr>
+<tr><td><a href="#130"><p style="color:black;"><h3>肋間神經痛</h3></p></a></td></tr>
+<tr><td><a href="#131"><p style="color:black;"><h3>憂鬱症、焦慮、緊張、神經敏感</h3></p></a></td></tr>
+<tr><td><a href="#132"><p style="color:black;"><h3>疲勞綜合症</h3></p></a></td></tr>
+<tr><td><a href="#134"><p style="color:black;"><h3>多動症</h3></p></a></td></tr>
+<tr><td><a href="#135"><p style="color:black;"><h3>自閉症</h3></p></a></td></tr>
+<tr><td><a href="#136"><p style="color:black;"><h3>亞斯伯格綜合症</h3></p></a></td></tr>
+</table>
+<a name="108"></a>
+<img src="108.jpg">
+<a name="110"></a>
+<img src="110.jpg">
+<a name="112"></a>
+<img src="112.jpg">
+<a name="113"></a>
+<img src="113.jpg">
+<a name="114"></a>
+<img src="114.jpg">
+<a name="115"></a>
+<img src="115.jpg">
+<a name="118"></a>
+<img src="118.jpg">
+<a name="120"></a>
+<img src="120.jpg">
+<a name="121"></a>
+<img src="121.jpg">
+<a name="122"></a>
+<img src="122.jpg">
+<a name="124"></a>
+<img src="124.jpg">
+<a name="125"></a>
+<img src="125.jpg">
+<a name="126"></a>
+<img src="126.jpg">
+<a name="127"></a>
+<img src="127.jpg">
+<a name="128"></a>
+<img src="128.jpg">
+<a name="130"></a>
+<img src="130.jpg">
+<a name="131"></a>
+<img src="131.jpg">
+<a name="132"></a>
+<img src="132.jpg">
+<a name="134"></a>
+<img src="134.jpg">
+<a name="135"></a>
+<img src="135.jpg">
+<a name="136"></a>
+<img src="136.jpg">
+</div>
+<div id="tabs-6"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#138"><p style="color:black;"><h3>尿崩症</h3></p></a></td></tr>
+<tr><td><a href="#139"><p style="color:black;"><h3>糖尿病</h3></p></a></td></tr>
+<tr><td><a href="#141"><p style="color:black;"><h3>甲狀腺機能亢進</h3></p></a></td></tr>
+<tr><td><a href="#143"><p style="color:black;"><h3>甲狀腺功能低下</h3></p></a></td></tr>
+<tr><td><a href="#145"><p style="color:black;"><h3>低血糖</h3></p></a></td></tr>
+<tr><td><a href="#146"><p style="color:black;"><h3>柯興氏綜合症</h3></p></a></td></tr>
+<tr><td><a href="#147"><p style="color:black;"><h3>埃狄森氏病</h3></p></a></td></tr>
+<tr><td><a href="#148"><p style="color:black;"><h3>單純性甲狀腺腫</h3></p></a></td></tr>
+<tr><td><a href="#149"><p style="color:black;"><h3>肥胖症（減肥）</h3></p></a></td></tr>
+</table>
+<a name="138"></a>
+<img src="138.jpg">
+<a name="139"></a>
+<img src="139.jpg">
+<a name="141"></a>
+<img src="141.jpg">
+<a name="143"></a>
+<img src="143.jpg">
+<a name="145"></a>
+<img src="145.jpg">
+<a name="146"></a>
+<img src="146.jpg">
+<a name="147"></a>
+<img src="147.jpg">
+<a name="148"></a>
+<img src="148.jpg">
+<a name="149"></a>
+<img src="149.jpg">
+</div>
+<div id="tabs-7"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#151"><p style="color:black;"><h3>腎小球腎炎</h3></p></a></td></tr>
+<tr><td><a href="#152"><p style="color:black;"><h3>腎盂腎炎</h3></p></a></td></tr>
+<tr><td><a href="#153"><p style="color:black;"><h3>膀胱炎</h3></p></a></td></tr>
+<tr><td><a href="#154"><p style="color:black;"><h3>尿道炎</h3></p></a></td></tr>
+</table>
+<a name="151"></a>
+<img src="151.jpg">
+<a name="152"></a>
+<img src="152.jpg">
+<a name="153"></a>
+<img src="153.jpg">
+<a name="154"></a>
+<img src="154.jpg">
+</div>
+<div id="tabs-8"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#156"><p style="color:black;"><h3>急性扭、挫傷</h3></p></a></td></tr>
+<tr><td><a href="#158"><p style="color:black;"><h3>落枕</h3></p></a></td></tr>
+<tr><td><a href="#159"><p style="color:black;"><h3>頸椎病</h3></p></a></td></tr>
+<tr><td><a href="#162"><p style="color:black;"><h3>多發性肌纖維炎</h3></p></a></td></tr>
+<tr><td><a href="#163"><p style="color:black;"><h3>肩關節周圍炎</h3></p></a></td></tr>
+<tr><td><a href="#165"><p style="color:black;"><h3>網球肘、高爾夫球肘</h3></p></a></td></tr>
+<tr><td><a href="#166"><p style="color:black;"><h3>腕管綜合症</h3></p></a></td></tr>
+<tr><td><a href="#167"><p style="color:black;"><h3>縮窄性指關節炎(板機指）</h3></p></a></td></tr>
+<tr><td><a href="#168"><p style="color:black;"><h3>腰痛(腰椎病）</h3></p></a></td></tr>
+<tr><td><a href="#169"><p style="color:black;"><h3>腰痛（棘間韌帶、椎旁韌帶病變）</h3></p></a></td></tr>
+<tr><td><a href="#170"><p style="color:black;"><h3>紙髂關節痛</h3></p></a></td></tr>
+<tr><td><a href="#171"><p style="color:black;"><h3>腰肌勞損</h3></p></a></td></tr>
+<tr><td><a href="#172"><p style="color:black;"><h3>腎虛腰痛</h3></p></a></td></tr>
+<tr><td><a href="#173"><p style="color:black;"><h3>坐骨神經痛</h3></p></a></td></tr>
+<tr><td><a href="#175"><p style="color:black;"><h3>尾椎挫傷</h3></p></a></td></tr>
+<tr><td><a href="#176"><p style="color:black;"><h3>膝關節痛</h3></p></a></td></tr>
+<tr><td><a href="#177"><p style="color:black;"><h3>腓腸肌痙攀</h3></p></a></td></tr>
+<tr><td><a href="#178"><p style="color:black;"><h3>跟痛</h3></p></a></td></tr>
+<tr><td><a href="#179"><p style="color:black;"><h3>風濕性關節炎</h3></p></a></td></tr>
+<tr><td><a href="#180"><p style="color:black;"><h3>肋軟骨炎</h3></p></a></td></tr>
+<tr><td><a href="#181"><p style="color:black;"><h3>痛風</h3></p></a></td></tr>
+<tr><td><a href="#182"><p style="color:black;"><h3>血栓閉塞性脈管炎</h3></p></a></td></tr>
+<tr><td><a href="#183"><p style="color:black;"><h3>血栓性靜脈炎</h3></p></a></td></tr>
+<tr><td><a href="#184"><p style="color:black;"><h3>雷諾氏病</h3></p></a></td></tr>
+<tr><td><a href="#185"><p style="color:black;"><h3>紅斑肢痛症</h3></p></a></td></tr>
+<tr><td><a href="#186"><p style="color:black;"><h3>丹毒</h3></p></a></td></tr>
+<tr><td><a href="#187"><p style="color:black;"><h3>乳腺小葉增生</h3></p></a></td></tr>
+<tr><td><a href="#188"><p style="color:black;"><h3>乳腺炎</h3></p></a></td></tr>
+<tr><td><a href="#189"><p style="color:black;"><h3>乳腺癌術後腋下水腫，疤痕引起手臂活動障礙</h3></p></a></td></tr>
+<tr><td><a href="#190"><p style="color:black;"><h3>淋巴結炎</h3></p></a></td></tr>
+<tr><td><a href="#191"><p style="color:black;"><h3>闌尾炎</h3></p></a></td></tr>
+<tr><td><a href="#192"><p style="color:black;"><h3>膽石症</h3></p></a></td></tr>
+<tr><td><a href="#193"><p style="color:black;"><h3>腎結石</h3></p></a></td></tr>
+<tr><td><a href="#194"><p style="color:black;"><h3>輸尿管結石</h3></p></a></td></tr>
+<tr><td><a href="#195"><p style="color:black;"><h3>膀胱結石</h3></p></a></td></tr>
+<tr><td><a href="#196"><p style="color:black;"><h3>尿道結石</h3></p></a></td></tr>
+<tr><td><a href="#197"><p style="color:black;"><h3>前列腺炎</h3></p></a></td></tr>
+<tr><td><a href="#198"><p style="color:black;"><h3>前列腺肥大</h3></p></a></td></tr>
+<tr><td><a href="#199"><p style="color:black;"><h3>睪丸炎、付睪丸炎</h3></p></a></td></tr>
+<tr><td><a href="#200"><p style="color:black;"><h3>陽萎</h3></p></a></td></tr>
+<tr><td><a href="#201"><p style="color:black;"><h3>遺精</h3></p></a></td></tr>
+<tr><td><a href="#202"><p style="color:black;"><h3>夜尿症</h3></p></a></td></tr>
+<tr><td><a href="#203"><p style="color:black;"><h3>尿頻</h3></p></a></td></tr>
+<tr><td><a href="#204"><p style="color:black;"><h3>尿潴留</h3></p></a></td></tr>
+<tr><td><a href="#205"><p style="color:black;"><h3>尿失禁</h3></p></a></td></tr>
+<tr><td><a href="#206"><p style="color:black;"><h3>脫肛</h3></p></a></td></tr>
+<tr><td><a href="#207"><p style="color:black;"><h3>痔</h3></p></a></td></tr>
+</table>
+<a name="156"></a>
+<img src="156.jpg">
+<a name="158"></a>
+<img src="158.jpg">
+<a name="159"></a>
+<img src="159.jpg">
+<a name="162"></a>
+<img src="162.jpg">
+<a name="163"></a>
+<img src="163.jpg">
+<a name="165"></a>
+<img src="165.jpg">
+<a name="166"></a>
+<img src="166.jpg">
+<a name="167"></a>
+<img src="167.jpg">
+<a name="168"></a>
+<img src="168.jpg">
+<a name="169"></a>
+<img src="169.jpg">
+<a name="170"></a>
+<img src="170.jpg">
+<a name="171"></a>
+<img src="171.jpg">
+<a name="172"></a>
+<img src="172.jpg">
+<a name="173"></a>
+<img src="173.jpg">
+<a name="175"></a>
+<img src="175.jpg">
+<a name="176"></a>
+<img src="176.jpg">
+<a name="177"></a>
+<img src="177.jpg">
+<a name="178"></a>
+<img src="178.jpg">
+<a name="179"></a>
+<img src="179.jpg">
+<a name="180"></a>
+<img src="180.jpg">
+<a name="181"></a>
+<img src="181.jpg">
+<a name="182"></a>
+<img src="182.jpg">
+<a name="183"></a>
+<img src="183.jpg">
+<a name="184"></a>
+<img src="184.jpg">
+<a name="185"></a>
+<img src="185.jpg">
+<a name="186"></a>
+<img src="186.jpg">
+<a name="187"></a>
+<img src="187.jpg">
+<a name="188"></a>
+<img src="188.jpg">
+<a name="189"></a>
+<img src="189.jpg">
+<a name="190"></a>
+<img src="190.jpg">
+<a name="191"></a>
+<img src="191.jpg">
+<a name="192"></a>
+<img src="192.jpg">
+<a name="193"></a>
+<img src="193.jpg">
+<a name="194"></a>
+<img src="194.jpg">
+<a name="195"></a>
+<img src="195.jpg">
+<a name="196"></a>
+<img src="196.jpg">
+<a name="197"></a>
+<img src="197.jpg">
+<a name="198"></a>
+<img src="198.jpg">
+<a name="199"></a>
+<img src="199.jpg">
+<a name="200"></a>
+<img src="200.jpg">
+<a name="201"></a>
+<img src="201.jpg">
+<a name="202"></a>
+<img src="202.jpg">
+<a name="203"></a>
+<img src="203.jpg">
+<a name="204"></a>
+<img src="204.jpg">
+<a name="205"></a>
+<img src="205.jpg">
+<a name="206"></a>
+<img src="206.jpg">
+<a name="207"></a>
+<img src="207.jpg">
+</div>
+<div id="tabs-9"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#209"><p style="color:black;"><h3>內耳眩暈症</h3></p></a></td></tr>
+<tr><td><a href="#210"><p style="color:black;"><h3>聽力下降</h3></p></a></td></tr>
+<tr><td><a href="#211"><p style="color:black;"><h3>耳嗚</h3></p></a></td></tr>
+<tr><td><a href="#212"><p style="color:black;"><h3>中耳炎</h3></p></a></td></tr>
+<tr><td><a href="#213"><p style="color:black;"><h3>耳堵塞感</h3></p></a></td></tr>
+<tr><td><a href="#214"><p style="color:black;"><h3>耳痛</h3></p></a></td></tr>
+<tr><td><a href="#217"><p style="color:black;"><h3>扁桃體炎</h3></p></a></td></tr>
+<tr><td><a href="#218"><p style="color:black;"><h3>急性咽喉炎</h3></p></a></td></tr>
+<tr><td><a href="#219"><p style="color:black;"><h3>慢性咽喉炎</h3></p></a></td></tr>
+<tr><td><a href="#220"><p style="color:black;"><h3>咽喉異物感</h3></p></a></td></tr>
+<tr><td><a href="#221"><p style="color:black;"><h3>聲音嘶啞</h3></p></a></td></tr>
+<tr><td><a href="#222"><p style="color:black;"><h3>復發性□腔滇瘍</h3></p></a></td></tr>
+<tr><td><a href="#223"><p style="color:black;"><h3>牙痛</h3></p></a></td></tr>
+<tr><td><a href="#224"><p style="color:black;"><h3>牙周病</h3></p></a></td></tr>
+<tr><td><a href="#225"><p style="color:black;"><h3>牙齦出血</h3></p></a></td></tr>
+<tr><td><a href="#226"><p style="color:black;"><h3>顳頜關節紊亂</h3></p></a></td></tr>
+<tr><td><a href="#227"><p style="color:black;"><h3>慢性箅炎</h3></p></a></td></tr>
+<tr><td><a href="#228"><p style="color:black;"><h3>過敏性碧炎</h3></p></a></td></tr>
+<tr><td><a href="#229"><p style="color:black;"><h3>鼻茜炎</h3></p></a></td></tr>
+<tr><td><a href="#230"><p style="color:black;"><h3>箅衄</h3></p></a></td></tr>
+<tr><td><a href="#231"><p style="color:black;"><h3>嗅覺失靈</h3></p></a></td></tr>
+<tr><td><a href="#232"><p style="color:black;"><h3>箅鼾，呼吸驟停</h3></p></a></td></tr>
+<tr><td><a href="#233"><p style="color:black;"><h3>禹咽炎，禹液倒流</h3></p></a></td></tr>
+<tr><td><a href="#234"><p style="color:black;"><h3>結膜炎</h3></p></a></td></tr>
+<tr><td><a href="#235"><p style="color:black;"><h3>臉腺炎、麥粒腫、霰粒腫</h3></p></a></td></tr>
+<tr><td><a href="#236"><p style="color:black;"><h3>白內障</h3></p></a></td></tr>
+<tr><td><a href="#237"><p style="color:black;"><h3>近視</h3></p></a></td></tr>
+<tr><td><a href="#238"><p style="color:black;"><h3>青光眼</h3></p></a></td></tr>
+<tr><td><a href="#239"><p style="color:black;"><h3>屈光不正、_心痛</h3></p></a></td></tr>
+<tr><td><a href="#240"><p style="color:black;"><h3>角膜炎</h3></p></a></td></tr>
+<tr><td><a href="#241"><p style="color:black;"><h3>視神經炎•視神經萎縮</h3></p></a></td></tr>
+</table>
+<a name="209"></a>
+<img src="209.jpg">
+<a name="210"></a>
+<img src="210.jpg">
+<a name="211"></a>
+<img src="211.jpg">
+<a name="212"></a>
+<img src="212.jpg">
+<a name="213"></a>
+<img src="213.jpg">
+<a name="214"></a>
+<img src="214.jpg">
+<a name="217"></a>
+<img src="217.jpg">
+<a name="218"></a>
+<img src="218.jpg">
+<a name="219"></a>
+<img src="219.jpg">
+<a name="220"></a>
+<img src="220.jpg">
+<a name="221"></a>
+<img src="221.jpg">
+<a name="222"></a>
+<img src="222.jpg">
+<a name="223"></a>
+<img src="223.jpg">
+<a name="224"></a>
+<img src="224.jpg">
+<a name="225"></a>
+<img src="225.jpg">
+<a name="226"></a>
+<img src="226.jpg">
+<a name="227"></a>
+<img src="227.jpg">
+<a name="228"></a>
+<img src="228.jpg">
+<a name="229"></a>
+<img src="229.jpg">
+<a name="230"></a>
+<img src="230.jpg">
+<a name="231"></a>
+<img src="231.jpg">
+<a name="232"></a>
+<img src="232.jpg">
+<a name="233"></a>
+<img src="233.jpg">
+<a name="234"></a>
+<img src="234.jpg">
+<a name="235"></a>
+<img src="235.jpg">
+<a name="236"></a>
+<img src="236.jpg">
+<a name="237"></a>
+<img src="237.jpg">
+<a name="238"></a>
+<img src="238.jpg">
+<a name="239"></a>
+<img src="239.jpg">
+<a name="240"></a>
+<img src="240.jpg">
+<a name="241"></a>
+<img src="241.jpg">
+</div>
+<div id="tabs-10"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#243"><p style="color:black;"><h3>月經不調</h3></p></a></td></tr>
+<tr><td><a href="#244"><p style="color:black;"><h3>月經過少、閉經</h3></p></a></td></tr>
+<tr><td><a href="#245"><p style="color:black;"><h3>月經過多、功能性子宮出血</h3></p></a></td></tr>
+<tr><td><a href="#246"><p style="color:black;"><h3>痛經</h3></p></a></td></tr>
+<tr><td><a href="#247"><p style="color:black;"><h3>宮頸炎</h3></p></a></td></tr>
+<tr><td><a href="#248"><p style="color:black;"><h3>帶症</h3></p></a></td></tr>
+<tr><td><a href="#249"><p style="color:black;"><h3>子宮內膜炎</h3></p></a></td></tr>
+<tr><td><a href="#250"><p style="color:black;"><h3>輸卵管炎</h3></p></a></td></tr>
+<tr><td><a href="#251"><p style="color:black;"><h3>附件炎</h3></p></a></td></tr>
+<tr><td><a href="#252"><p style="color:black;"><h3>盆腔炎</h3></p></a></td></tr>
+<tr><td><a href="#253"><p style="color:black;"><h3>更年期綜合症</h3></p></a></td></tr>
+<tr><td><a href="#254"><p style="color:black;"><h3>子宮下垂</h3></p></a></td></tr>
+<tr><td><a href="#255"><p style="color:black;"><h3>不孕症</h3></p></a></td></tr>
+</table>
+<a name="243"></a>
+<img src="243.jpg">
+<a name="244"></a>
+<img src="244.jpg">
+<a name="245"></a>
+<img src="245.jpg">
+<a name="246"></a>
+<img src="246.jpg">
+<a name="247"></a>
+<img src="247.jpg">
+<a name="248"></a>
+<img src="248.jpg">
+<a name="249"></a>
+<img src="249.jpg">
+<a name="250"></a>
+<img src="250.jpg">
+<a name="251"></a>
+<img src="251.jpg">
+<a name="252"></a>
+<img src="252.jpg">
+<a name="253"></a>
+<img src="253.jpg">
+<a name="254"></a>
+<img src="254.jpg">
+<a name="255"></a>
+<img src="255.jpg">
+</div>
+<div id="tabs-11"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#258"><p style="color:black;"><h3>皮庳掻癀症</h3></p></a></td></tr>
+<tr><td><a href="#260"><p style="color:black;"><h3>尋麻疹</h3></p></a></td></tr>
+<tr><td><a href="#261"><p style="color:black;"><h3>接觸性皮炎</h3></p></a></td></tr>
+<tr><td><a href="#262"><p style="color:black;"><h3>帶狀皰疹</h3></p></a></td></tr>
+<tr><td><a href="#264"><p style="color:black;"><h3>痤瘡</h3></p></a></td></tr>
+<tr><td><a href="#265"><p style="color:black;"><h3>酒渣箅、玫瑰痤瘡</h3></p></a></td></tr>
+<tr><td><a href="#266"><p style="color:black;"><h3>扁平抚</h3></p></a></td></tr>
+<tr><td><a href="#267"><p style="color:black;"><h3>神經性皮炎</h3></p></a></td></tr>
+<tr><td><a href="#268"><p style="color:black;"><h3>脂溢性皮炎</h3></p></a></td></tr>
+<tr><td><a href="#269"><p style="color:black;"><h3>黃褐斑</h3></p></a></td></tr>
+<tr><td><a href="#270"><p style="color:black;"><h3>白瘢風</h3></p></a></td></tr>
+<tr><td><a href="#271"><p style="color:black;"><h3>濕疹</h3></p></a></td></tr>
+<tr><td><a href="#272"><p style="color:black;"><h3>多汗症</h3></p></a></td></tr>
+<tr><td><a href="#273"><p style="color:black;"><h3>脫髮</h3></p></a></td></tr>
+<tr><td><a href="#274"><p style="color:black;"><h3>盤狀紅班狼瘡</h3></p></a></td></tr>
+<tr><td><a href="#275"><p style="color:black;"><h3>牛皮癬</h3></p></a></td></tr>
+</table>
+<a name="258"></a>
+<img src="258.jpg">
+<a name="260"></a>
+<img src="260.jpg">
+<a name="261"></a>
+<img src="261.jpg">
+<a name="262"></a>
+<img src="262.jpg">
+<a name="264"></a>
+<img src="264.jpg">
+<a name="265"></a>
+<img src="265.jpg">
+<a name="266"></a>
+<img src="266.jpg">
+<a name="267"></a>
+<img src="267.jpg">
+<a name="268"></a>
+<img src="268.jpg">
+<a name="269"></a>
+<img src="269.jpg">
+<a name="270"></a>
+<img src="270.jpg">
+<a name="271"></a>
+<img src="271.jpg">
+<a name="272"></a>
+<img src="272.jpg">
+<a name="273"></a>
+<img src="273.jpg">
+<a name="274"></a>
+<img src="274.jpg">
+<a name="275"></a>
+<img src="275.jpg">
+</div>
+<div id="tabs-12"><table width"80" border="1" cellspacing="4" cellpadding="1" >
+<tr><td><a href="#278"><p style="color:black;"><h3>預防感冒</h3></p></a></td></tr>
+<tr><td><a href="#279"><p style="color:black;"><h3>預防置車、暈船、蓽機</h3></p></a></td></tr>
+<tr><td><a href="#280"><p style="color:black;"><h3>預防輸血(液)反應</h3></p></a></td></tr>
+<tr><td><a href="#281"><p style="color:black;"><h3>戒煙</h3></p></a></td></tr>
+<tr><td><a href="#282"><p style="color:black;"><h3>戒酒</h3></p></a></td></tr>
+<tr><td><a href="#283"><p style="color:black;"><h3>戒毐</h3></p></a></td></tr>
+<tr><td><a href="#284"><p style="color:black;"><h3>競技綜合症</h3></p></a></td></tr>
+<tr><td><a href="#287"><p style="color:black;"><h3>腮腺炎</h3></p></a></td></tr>
+<tr><td><a href="#292"><p style="color:black;"><h3>耳穴攝生保健與抗衰老</h3></p></a></td></tr>
+</table>
+<a name="278"></a>
+<img src="278.jpg">
+<a name="279"></a>
+<img src="279.jpg">
+<a name="280"></a>
+<img src="280.jpg">
+<a name="281"></a>
+<img src="281.jpg">
+<a name="282"></a>
+<img src="282.jpg">
+<a name="283"></a>
+<img src="283.jpg">
+<a name="284"></a>
+<img src="284.jpg">
+<a name="287"></a>
+<img src="287.jpg">
+<a name="292"></a>
+<img src="292.jpg">
+</div>
+ 
+
+
+
+</body> 
+</html> 
+
